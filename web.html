@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break&Go</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="webStyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap">
+    <link href="https://fonts.cdnfonts.com/css/corporative-alt" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <a href="#home">
+            <img class="logo" src="images/logo.png" alt="BreakandGo Logo">
+        </a>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button id="cerrar" class="cerrar-menu"><i class="bi bi-x-lg"></i></button>
+            <ul class="nav-list">
+                <li><a href="#home">INICIO</a></li>
+                <li><a href="#about">SOBRE NOSOTROS</a></li>
+                <li><a href="#menu">MENÚ</a></li>
+                <li><a href="#history">NUESTRA HISTORIA</a></li>
+                <li><a href="#service">SERVICIOS</a></li>
+                <li>
+                    <div class="container-icon">
+                            <div class="container-cart-icon">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="icon-cart"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                                    />
+                                </svg>
+                                <div class="count-products">
+                                    <span id="contador-productos">0</span>
+                                </div>
+                            </div>
+            
+                            <div class="container-cart-products hidden-cart">
+                                <div class="row-product">   
+                                    
+                                    <div class="cart-product">
+                                        <div class="info-cart-product">
+                                            <span class="cantidad-producto-carrito"></span>
+                                            <p class="titulo-producto-carrito"></p>
+                                            <span class="precio-producto-carrito"></span>
+                                        </div>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="currentColor"
+                                            class="icon-close"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                d="M6 18L18 6M6 6l12 12"
+                                            />
+                                        </svg>
+                                    </div>
+                                </div>
+            
+                                <div class="cart-total">
+                                    <h3>Total:</h3>
+                                    <span class="total-pagar"></span>
+                                </div>
+                                <p class="cart-empty hidden">El carrito está vacío</p>
+                            </div>
+                        </div>
+                    </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hidden-box"></div>
+    <!-- Home Start -->
+
+    
+
+    <div class="home" id="home">
+        <div class="home-text">
+            <h1>Felicidad <br>para llevar</h1>
+            <h2>El mejor café, listo para seguirte</h2>
+            <a href="#menu" class="btn">Nuestro menú</a>
+        </div>
+        <div class="home-img">
+            <img src="images/home.png" alt="">
+        </div>
+    </div>
+
+    <!-- About Start -->
+
+    <div class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.jpg" alt="">
+        </div>
+        <div class="about-txt">
+            <h1>Sobre nosotros</h1>
+            <h2>¡Descubrí la nueva forma de disfrutar tu café y comida favorita en la facu!</h2>
+            <p> Nuestra cafetería dentro del campus te acompaña en cada jornada con el mejor café para llevar y opciones saludables pensadas para quienes eligen cuidarse y cuidar el planeta.</p>
+            <a href="#history" class="btn">Nuestra historia</a>
+        </div>
+    </div>
+
+    <!-- Menu Start -->
+
+    <section class="menu" id="menu">
+        <div class="heading">
+            <h1>Nuestro menú</h1>
+            <h2>Exquisitos gustos a un gran precio</h2>
+        </div>
+        <div class="menu-container">
+            <div class="container-items">
+
+                <div class="box ">
+                    <div class="box-img">
+                        <img src="images/menu/cafe.png" alt="">
+                    </div>
+                    <div class="info-product test">
+                        <h2>Café Mocha</h2>
+                        <h3>Con medialuna o cookies</h3>
+                        <p>$7300</p>
+                        <button class="bx bx-cart btn-add-cart"></button>
+                    </div>
+                </div>
+
+                <div class="box ">
+                    <div class="box-img">
+                        <img src="images/menu/roll de canela.png" alt="">
+                    </div>
+                    <div class="info-product test">
+                        <h2>Roll de canela</h2>
+                        <h3>De Oreo o con nueces</h3>
+                        <p>$7000</p>
+                        <button class="bx bx-cart btn-add-cart"></button>
+                    </div>
+                </div>
+
+                <div class="box ">
+                    <div class="box-img">
+                        <img src="images/menu/cafe frio.png" alt="">
+                    </div>
+                    <div class="info-product test">
+                        <h2>Café frio</h2>
+                        <h3>Con medialuna o cookies</h3>
+                        <p>$8000</p>
+                        <button class="bx bx-cart btn-add-cart"></button>
+                    </div>
+                </div>
+
+                <div class="box ">
+                    <div class="box-img">
+                        <img src="images/menu/budin naranja.png" alt="">
+                    </div>
+                    <div class="info-product test">
+                        <h2>Budin de naranja</h2>
+                        <h3>Clásico o con chips</h3>
+                        <p>$5900</p>
+                        <button class="bx bx-cart btn-add-cart"></button>
+                    </div>
+                </div>
+
+                <div class="box ">
+                    <div class="box-img">
+                        <img src="images/menu/vista-frontal-de-la-mujer-barista-con-delantal-sosteniendo-un-vaso-de-cafe-decorado.png" alt="">
+                    </div>
+                    <div class="info-product test">
+                        <h2>Flat white</h2>
+                        <h3>Con medialuna o cookies</h3>
+                        <p>$6500</p>
+                        <button class="bx bx-cart btn-add-cart"></button>
+                    </div>
+                </div>
+
+                <div class="box ">
+                    <div class="box-img">
+                        <img src="images/menu/yogurt.png" alt="">
+                    </div>
+                    <div class="info-product test">
+                        <h2>Yogurt con granola</h2>
+                        <h3>Con frutilla o frutos rojos</h3>
+                        <p>$6000</p>
+                        <button class="bx bx-cart btn-add-cart"></button>
+                    </div>
+                </div>
+
+                <div class="box ">
+                    <div class="box-img">
+                        <img src="images/menu/te.png" alt="">
+                    </div>
+                    <div class="info-product test">
+                        <h2>Café americano</h2>
+                        <h3>Con medialuna o cookies</h3>
+                        <p>$5500</p>
+                        <button class="bx bx-cart btn-add-cart"></button>
+                    </div>
+                </div>
+
+                <div class="box ">
+                    <div class="box-img">
+                        <img src="images/menu/tostadas palta.png" alt="">
+                    </div>
+                    <div class="info-product test">
+                        <h2>Tostadas con palta</h2>
+                        <h3>Con huevo o tomate</h3>
+                        <p>$8200</p>
+                        <button class="bx bx-cart btn-add-cart"></button>
+                    </div>
+                </div>
+
+                <div class="box ">
+                    <div class="box-img">
+                        <img src="images/menu/cafe espuma.png" alt="">
+                    </div>
+                    <div class="info-product test">
+                        <h2>Café dalgona</h2>
+                        <h3>Con medialuna o cookies</h3>
+                        <p>$6600</p>
+                        <button class="bx bx-cart btn-add-cart"></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="history">
+        <div class="heading">
+            <h1 class="title-history">Nuestra historia</h1>
+            <h2>Las grandes ideas tienen grandes comienzos</h2>
+        </div>
+        <div class="history">
+            <div class="home-img">
+                <img src="images/cafeteria.png" alt="">
+            </div>
+
+            <div class="history-txt-box">
+                <img src="images/nuestrahistoria.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Start -->
+    <section class="service" id="service">
+        <div class="heading">
+            <h1>Servicios</h1>
+            <h2>Te servimos el mejor café para endulzar tu cursada</h2>
+        </div>
+
+        <div class="service-container">
+            <div class="s-box">
+                <img src="images/s1.png" alt="">
+                <h3>Pedido</h3>
+                <p>Break&Go te permite hacer pedidos desde nuestra pagina web para que puedas retirarlo cuando este listo</p>
+            </div>
+
+            <div class="s-box">
+                <img src="images/s2.png" alt="">
+                <h3>Preparacion</h3>
+                <p>Al instante de realizar tu pedido nosostros comenzamos a prepararlo mientras te preparas para el break</p>
+            </div>
+
+            <div class="s-box">
+                <img src="images/s3.png" alt="">
+                <h3>Retiro</h3>
+                <p>Una vez preparado tu pedido te enviamos una notificacion para que lo pases a buscar y ganar tiempo sin filas ni demoras</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="footer">
+            <div class="main">
+                <div class="col">
+                    <h4>Menú</h4>
+                    <ul>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#about">Sobre nosotros</a></li>
+                        <li><a href="#menu">Menú</a></li>
+                        <li><a href="#service">Servicios</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Creado por</h4>
+                    <ul>
+                        <li><a>Barbara</a></li>
+                        <li><a>Constanza</a></li>
+                        <li><a>Agostina</a></li>
+                        <li><a>Agustin</a></li>
+                        <li><a>Sebastian</a></li>
+                        <li><a>Martin</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Nuestras redes</h4>
+                    <div class="social">
+                        <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://www.tiktok.com/"><i class='bx bxl-tiktok'></i></a>
+                        <a href="https://www.youtube.com/"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Javascript -->
+
+    <script src="script.js" ></script>
+</body>
+
+</html>
