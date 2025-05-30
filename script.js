@@ -154,3 +154,5 @@ const showHTML = () => {        // Función para actualizar la visualizacion del
         cartEmpty.classList.add('hidden');
     }
 }
+
+
